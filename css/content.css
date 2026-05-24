@@ -12,6 +12,7 @@ header {
 
 header img {
   width: 50%;
+  animation: moveUp 3s;
 }
 
 h1 {
@@ -32,6 +33,42 @@ h1 {
   gap: 2rem;
 }
 
+/* tab */
+@media (min-width: 700px) {
+  header img {
+    width: 20%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.8rem;
+  }
+
+  .text-box p {
+    text-align: center;
+  }
+
+  /* btn container */
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1220px) {
+  h1 {
+    text-align: center;
+    font-size: 4.2rem;
+  }
+
+  .text-box p {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
 section {
   margin-bottom: 6rem;
 }
@@ -50,11 +87,22 @@ section {
 }
 
 /* feature */
+
+.features-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.features-box img {
+  width: 100%;
+  align-self: center;
+  animation: moveInLeft 3s;
+}
 .features-container {
-  padding: 4rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  animation: moveInRight 3s;
 }
 
 .feature {
@@ -66,6 +114,42 @@ section {
 
 .feature p {
   text-align: center;
+}
+
+/* tab */
+@media (min-width: 700px) {
+  .features-box img {
+    width: 80%;
+    align-self: center;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1220px) {
+  .features-box {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    margin-top: 8rem;
+  }
+
+  .features-box img {
+    width: 100%;
+    align-self: center;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .feature h3 {
+    text-align: left;
+  }
+  .feature p {
+    text-align: left;
+  }
 }
 
 /* access section */
@@ -81,6 +165,9 @@ section {
   gap: 2.5rem;
   text-align: center;
 }
+.clipboard-section img {
+  animation: moveInLeft 3s;
+}
 
 /* supercarge  */
 .supercharge-section {
@@ -93,6 +180,7 @@ section {
 .three-grid {
   display: grid;
   gap: 3rem;
+  animation: moveInRight 3s;
 }
 
 .box {
@@ -105,8 +193,32 @@ section {
 }
 .box img {
   width: 20%;
+  animation: moveInLeft 3s;
 }
 
+/* tab */
+@media (min-width: 700px) {
+  .three-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1220px) {
+  .three-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .box img {
+    width: 10%;
+  }
+}
+
+/* products */
 .products {
   padding: 3rem;
 }
@@ -117,6 +229,7 @@ section {
   gap: 3rem;
   justify-content: center;
   align-content: center;
+  animation: brandAnimation 5s infinite;
 }
 
 .products-grid img {
@@ -131,10 +244,27 @@ section {
   gap: 3rem;
 }
 
+/* tab */
+@media (min-width: 700px) {
+  .clipboard {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1220px) {
+}
+
 /* footer */
 
 .foot {
   padding: 3rem;
+  background-color: #f8f9fa;
   display: grid;
   gap: 3rem;
   justify-content: center;
@@ -149,4 +279,48 @@ section {
 .foot .socials {
   display: flex;
   gap: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* tab */
+@media (min-width: 700px) {
+  .foot {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 8rem;
+  }
+
+  .foot .socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .attribution {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1220px) {
+  .foot {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12rem;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 8rem;
+  }
 }
