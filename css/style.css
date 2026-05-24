@@ -1,0 +1,30 @@
+/* variable */
+:root {
+  /* color */
+  --cl1: hsl(233, 100%, 69%);
+  --cl2: hsl(171, 66%, 44%);
+
+  /* text color */
+  --tc1: hsl(210, 10%, 33%);
+  --tc2: hsl(201, 11%, 66%);
+  /* font-family */
+  --ff1: "Bai Jamjuree", sans-serif;
+}
+
+/* resets and defaults  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff1);
+  color: var(--tc2);
+  font-size: 1.8rem;
+}
