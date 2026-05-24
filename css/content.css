@@ -1,0 +1,38 @@
+/* content sytles */
+
+header {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+header img {
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* text box */
+.text-box p {
+  text-align: center;
+}
+
+/* btn container */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+/* track section */

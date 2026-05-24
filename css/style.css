@@ -28,3 +28,79 @@ body {
   color: var(--tc2);
   font-size: 1.8rem;
 }
+
+/* utilities */
+
+/* 900 */
+@media (min-width: 900px) {
+  .container {
+    width: 960px;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.text-box {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.btn-pry {
+  background-color: var(--cl2);
+  color: white;
+  border: none;
+  padding: 1.2rem 3.2rem;
+}
+
+.btn-sec {
+  background-color: var(--cl1);
+  color: white;
+  border: none;
+  padding: 1.2rem 3.2rem;
+}
+.btn {
+  border-radius: 18px;
+  font-size: 1.8rem;
+}
+.btn:hover,
+.btn:active {
+  background-color: transparent;
+  border: 1px solid var(--tc2);
+  color: var(--tc1);
+}
+
+.g-btn {
+  box-shadow: 0 20px 30px 0px rgba(38, 186, 164, 0.1);
+}
+
+.b-btn {
+  box-shadow: 0 20px 30px 0px rgba(97, 115, 255, 0.1);
+}
+
+/* base style */
+img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--tc1);
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--tc1);
+}
