@@ -27,12 +27,26 @@ body {
   font-family: var(--ff1);
   color: var(--tc2);
   font-size: 1.8rem;
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 /* utilities */
 
 /* 900 */
 @media (min-width: 900px) {
+  body {
+    background-image: url("/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
   .container {
     width: 960px;
     max-width: 1220px;
