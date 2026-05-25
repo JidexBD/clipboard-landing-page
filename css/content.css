@@ -269,7 +269,7 @@ section {
   gap: 3rem;
   justify-content: center;
   align-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 0rem;
 }
 
 .foot img {
@@ -287,6 +287,13 @@ ul {
   gap: 2rem;
 }
 
+.attribution {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  align-self: center;
+  background-color: #f8f9fa;
+}
 /* tab */
 @media (min-width: 700px) {
   .foot {
@@ -296,7 +303,7 @@ ul {
     gap: 3rem;
     justify-content: center;
     align-content: center;
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
   }
 
   .foot .socials {
@@ -305,22 +312,22 @@ ul {
     justify-content: center;
     align-items: center;
   }
-
-  .attribution {
-    text-align: center;
-    align-self: center;
-  }
 }
 
 /* 1024 */
 @media (min-width: 1220px) {
   .foot {
-    padding: 3rem;
+    padding: 5rem 5rem 0rem 5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 12rem;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
+  }
+
+  .socials img,
+  .foot img {
+    width: 15%;
   }
 }
